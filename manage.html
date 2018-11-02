@@ -1,0 +1,23 @@
+
+<ion-content padding="true">
+    <ion-card-header>Orders</ion-card-header>
+        <ion-card-content>
+        
+            <ion-card *ngFor="let custname of cust_name" (click)="get_details($event,cust_name,date,time,table_no)" >
+                {{ custname }}
+            </ion-card>
+            <ion-card *ngFor="let date of date" (click)="get_details($event,cust_name,date,time,table_no)">
+                {{ date }}
+            </ion-card>
+            <ion-card *ngFor="let time of time" (click)="get_details($event,cust_name,date,time,table_no)">
+                {{ time }}
+            </ion-card>
+            <ion-card *ngFor="let table_no of table_no" (click)="get_details($event,cust_name,date,time,table_no)">
+                {{ table_no }}
+            </ion-card>
+        
+        
+        </ion-card-content>
+      
+      
+  </ion-content>
